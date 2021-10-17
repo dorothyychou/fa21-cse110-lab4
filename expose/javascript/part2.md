@@ -34,18 +34,22 @@
     </li>
     <li>
         <ol type="A">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>true. '2' maps to the integer 2 and 2>1 is true.</li>
+            <li>false. The string '2' is larger compared to the string '12' because they are compared character by character and '2'<'1' is false.</li>
+            <li>true. The == operator converts the values to the same type before comparing so '2' could map to the integer 2 and 2 is equal to 2 so 2=='2' is true.</li>
+            <li>false. The === operator does not convert the values to the same type before comparing, so 2==='2' is false.</li>
+            <li>false. == converts the values to the same type, so true could map to integer 1, but 1 does not equal 2 so this is false.</li>
+            <li>true. Boolean(x) where x is a nonzero value is true so true===true is true.</li>
         </ol>
     </li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>The == operator converts the values to the same type before comparing so as long as the values are equal after being converted to the same type it would return true. Whereas the === operator does not convert the values to the same type before comparing so it only returns true if the two sides are the same type and the same value.</li>
+    <li>In file part2-question16.js.</li>
+    <li>The result would be [2,4,6]. This is because when we call modifyArray with array [1,2,3] and callback doSomething, we push each element of array onto the new array (newArr) after sending them through the callback function. So we would push doSomething for each element of array. Thus, [1,2,3] becomes [2,4,6] because in doSomething each element is doubled.</li>
+    <li>In file part2-question18.js.</li>
+    <li>
+    1 <br>
+    4 <br>
+    3 <br>
+    2
+    </li>
 </ol>
